@@ -1,0 +1,64 @@
+:root {
+  --PrimaryColor: hsl(199, 100%, 33%);
+  --SecondaryColor: hsl(187, 85%, 43%);
+  --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(201, 33%, 16%);
+  --textColor: hsl(240, 4%, 36%);
+  --whiteColorDeam: hsl(0, 0%, 93%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: rgb(239, 239, 239);
+  --bodyColor: rgb(240, 240, 240);
+  --cardBG: rgb(225, 225, 225);
+  --cardHover: rgb(225, 255, 255);
+}
+
+.secSearch {
+  padding-bottom: 2rem;
+}
+.secSearch .searchDiv {
+  width: 100%;
+  box-shadow: 0 30px 35px -2px rgba(0, 0, 0, 0.15);
+  border-radius: 0.5rem;
+  margin-top: -90px;
+  z-index: 2;
+  position: relative;
+}
+.secSearch .searchDiv .input {
+  height: 50px;
+  padding: 0 1rem;
+  background: var(--inputColor);
+  border-radius: 0.5rem;
+  border-color: var(--blackColor);
+}
+.secSearch .searchDiv .input input {
+  background: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 13px;
+  font-weight: 500;
+}
+.secSearch .searchDiv .input input::-moz-placeholder {
+  font-size: 13px;
+}
+.secSearch .searchDiv .input input::placeholder {
+  font-size: 13px;
+}
+.secSearch .searchDiv .input .icon {
+  font-size: 18px;
+  color: var(--PrimaryColor) !important;
+  margin-left: 10px;
+}
+.secSearch .searchDiv .country-list {
+  max-height: 150px; /* Set the maximum height for the list */
+  overflow-y: auto; /* Enable vertical scrolling when the content overflows */
+  border: 1px solid #ccc; /* Optional: Add border for a cleaner look */
+}
+.secSearch .searchDiv .country-list div {
+  padding: 8px;
+  cursor: pointer;
+}
+.secSearch .searchDiv .country-list div:hover {
+  background-color: var(--greyText); /* Optional: Highlight the hovered item */
+}/*# sourceMappingURL=countrySearchBar.css.map */

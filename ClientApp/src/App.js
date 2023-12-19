@@ -1,22 +1,18 @@
-import React, { Component } from 'react';
-import { Route, Routes } from 'react-router-dom';
-import AppRoutes from './AppRoutes';
-import { Layout } from './components/Layout';
-import './custom.css';
+import React from 'react';
+import AuthProvider from './components/Auth/AuthProvider';
+import Routesl from './Routes';
 
-export default class App extends Component {
-  static displayName = App.name;
+function App() {
+  // static displayName = App.name;
+  // const { token } = useAuth();
 
-  render() {
+  // render() {
     return (
-      <Layout>
-        <Routes>
-          {AppRoutes.map((route, index) => {
-            const { element, ...rest } = route;
-            return <Route key={index} {...rest} element={element} />;
-          })}
-        </Routes>
-      </Layout>
+  <AuthProvider>
+          <Routesl />
+        </AuthProvider>
     );
-  }
+  // }
 }
+
+export default App;

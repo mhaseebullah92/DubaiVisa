@@ -1,0 +1,175 @@
+:root {
+  --PrimaryColor: hsl(199, 100%, 33%);
+  --SecondaryColor: hsl(187, 85%, 43%);
+  --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(201, 33%, 16%);
+  --textColor: hsl(240, 4%, 36%);
+  --whiteColorDeam: hsl(0, 0%, 93%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: rgb(239, 239, 239);
+  --bodyColor: rgb(240, 240, 240);
+  --cardBG: rgb(225, 225, 225);
+  --cardHover: rgb(225, 255, 255);
+}
+
+.main {
+  width: 100%;
+}
+.main .secContent {
+  justify-content: center;
+  gap: 1.5rem;
+}
+.main .secContent .singleDestination {
+  height: 100%;
+  display: flex;
+  row-gap: 10px;
+  padding: 40px 20px;
+  border-radius: 10px;
+  align-items: center;
+  background: var(--cardBG);
+  box-shadow: 0 2px 4px rgba(140, 140, 141, 0.549);
+  overflow: hidden;
+  flex-direction: column;
+}
+.main .secContent .singleDestination.loading-card {
+  position: relative;
+  background: var(--greyText);
+  overflow: hidden;
+}
+.main .secContent .singleDestination.loading-card .loading-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.788), transparent);
+  animation: loadingAnimation 2s infinite linear;
+}
+.main .secContent .singleDestination.loading-card .loading-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 80%;
+  background: #ccc;
+}
+.main .secContent .singleDestination:hover {
+  background: var(--cardHover);
+  box-shadow: 1 4px 4px rgba(85, 85, 114, 0.549);
+  transition: 0.3s ease;
+}
+.main .secContent .singleDestination .durationplan {
+  width: 100%;
+  color: var(--textColor);
+  font-weight: 500;
+  font-size: 28px;
+  text-align: center;
+}
+.main .secContent .singleDestination .recicon {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+.main .secContent .singleDestination .recicon .icon {
+  font-size: 100px;
+  color: var(--PrimaryColor);
+}
+.main .secContent .singleDestination .cardInfo {
+  padding: 1rem;
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main .secContent .singleDestination .cardInfo .destTitle {
+  color: var(--blackColor);
+  font-size: 1.25rem;
+}
+.main .secContent .singleDestination .cardInfo .continent {
+  gap: 0.5rem;
+}
+.main .secContent .singleDestination .cardInfo .continent .icon {
+  color: var(--textColor);
+  font-size: 18px;
+}
+.main .secContent .singleDestination .cardInfo .continent .name {
+  color: var(--textColor);
+  font-weight: 400;
+  font-size: 14px;
+}
+.main .secContent .singleDestination .cardInfo .cardHeading {
+  width: 100%;
+  padding: 1rem;
+  padding-top: 0;
+  margin: 1rem 0;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  border-bottom: 1.5px solid var(--greyText);
+}
+.main .secContent .singleDestination .cardInfo .cardHeading .grade {
+  color: var(--textColor);
+  max-width: 100%;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.main .secContent .singleDestination .cardInfo .cardHeading .grade small {
+  text-align: center;
+  background: var(--gradientColor);
+  border-radius: 1rem;
+  color: var(--whiteColor);
+  padding: 1px 10px;
+  font-size: 10px;
+}
+.main .secContent .singleDestination .cardInfo .cardHeading .price {
+  font-size: 2rem;
+  color: var(--blackColor);
+}
+.main .secContent .singleDestination .cardInfo .cardPrice {
+  font-size: 50px;
+  color: var(--PrimaryColor);
+}
+.main .secContent .singleDestination .cardInfo .cardPrice .pow {
+  font-size: 20px;
+}
+.main .secContent .singleDestination .cardInfo .desc {
+  font-size: 13.5px;
+  color: var(--textColor);
+  font-weight: 500;
+  text-align: center;
+}
+.main .secContent .singleDestination .cardInfo .btn-cus {
+  margin-top: 1rem;
+  color: var(--whiteColor);
+  font-weight: 600;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+.main .secContent .singleDestination .cardInfo .btn-cus .icon {
+  align-self: center;
+  font-size: 18px;
+}
+
+@keyframes loadingAnimation {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+@media screen and (min-width: 500px) {
+  .secContent {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 840px) {
+  .main .secContent {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}/*# sourceMappingURL=planCards.css.map */

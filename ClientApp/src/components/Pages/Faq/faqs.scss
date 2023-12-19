@@ -1,0 +1,175 @@
+:root {
+    --PrimaryColor: hsl(199, 100%, 33%);
+    --SecondaryColor: hsl(187, 85%, 43%);
+    --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(201, 33%, 16%);
+    --textColor: hsl(240, 4%, 36%);
+    --whiteColorDeam: hsl(0, 0%, 93%);
+    --greyText: rgb(190, 190, 190);
+    --inputColor: rgb(239, 239, 239);
+    --bodyColor: rgb(240, 240, 240);
+    --cardBG: rgb(225, 225, 225);
+    --cardHover: rgb(225, 255, 255);
+}
+
+.faqs {
+    width: 100%;
+
+    .secTitle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 0;
+        .title {
+            position: relative;
+            width: max-content;
+            color: var(--textColor);
+            margin: 0rem 0;
+            z-index: 2;
+            text-align: center;
+
+            &::after {
+                position: absolute;
+                content: '';
+                background: var(--gradientColor);
+                height: 3px;
+                width: 120px;
+                right: 0;
+                bottom: 6px;
+                z-index: -1;
+            }
+        }
+        .smallText{
+            font-size: 13px;
+            text-transform: uppercase;
+        }
+    }
+
+    .secContent {
+        justify-content: center;
+        gap: 1.5rem;
+
+        .optionSelection{
+            height: 100%;
+            width: 100%;
+            display: flex;
+            row-gap: 10px;
+            padding: 20px 20px;
+            border-radius: 10px;
+            justify-content: center;
+            background: var(--cardBG);
+            box-shadow: 0 2px 4px rgba(140, 140, 141, 0.549);
+            overflow: hidden;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+            flex-direction: row;
+            .radioSec{
+                // margin: 20px 20px;
+                display: grid;
+                align-items: center;
+                color: var(--textColor);
+                width: 80%;
+                .radioInp{
+                    padding-right: 13px;
+                }
+            }
+            .switchSection{
+                // padding: 0;
+                // margin: 0;
+                // display: flex;
+                // align-items: center;
+                // color: var(--textColor);
+                // font-weight: 200;
+                // font-size: 20px;
+                // .usdlabel{
+                //     padding: 0 6px;
+                // }
+                width: 50%;
+                
+                .btn-cus {
+                    
+                    width: 100%;
+                    justify-content: center;
+                    color: var(--whiteColor);
+                    font-weight: 500;
+                    gap: .5rem;
+                    border-radius: .5rem;
+                    .icon{
+                        font-size: 18px;
+                    }
+                }
+                
+            }
+        }
+    }
+
+
+
+}
+
+.faq-item{
+    width: 100%;
+    cursor: pointer;
+    .question-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .answer{
+        padding-top: .5rem;
+        cursor: context-menu ;
+    }
+    .ans-line{
+        padding-top: .6rem;
+        border-bottom: 1.5px solid var(--greyText);
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .faqs {
+    .title {
+        font-size: 1.5rem;
+
+        &::after {
+            width: 155px !important;
+        }
+    }
+
+    .secContent {
+        grid-template-columns: repeat(2, 1fr);
+
+        // .singleDestination {
+        //     height: auto;
+        // }
+    }
+}
+}
+
+@media screen and (min-width: 840px) {
+    .faqs{
+        padding-left: 3rem;
+        padding-right: 3rem;
+        .secContent {
+            grid-template-columns: repeat(3, 1fr);
+
+            // .singleDestination {
+            //     height: auto;
+            // }
+        }
+    }
+}
+
+@media screen and (min-width:960px) {
+    .faqs{
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+}
+
+@media screen and (min-width:1240px) {
+    .faqs{
+        padding-left: 9rem;
+        padding-right: 9rem;
+    }
+}
