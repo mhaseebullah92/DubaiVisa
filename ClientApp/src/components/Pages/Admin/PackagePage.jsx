@@ -95,11 +95,7 @@ const PackagePage = () => {
     }
 
     const pagesreturn=()=>{
-        alert(totaldata)
-        alert(pageSize)
-        alert(totaldata/pageSize)
         const totalpage=Math.ceil(totaldata/pageSize);
-        alert(totalpage);
         const pages=[];
         for (let i = 0; i < totalpage; i++) {
             pages.push(<PaginationItem key={i}>
