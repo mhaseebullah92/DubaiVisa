@@ -73,7 +73,6 @@ const CountrySearchBar = ({setCountry}) => {
         setCountry(country);
         setFilteredCountries([]);
         // You can use 'country' as needed, for now, I'm setting it as a placeholder
-        // alert(`Selected country: ${country}`);
     };
     return (
         <section className="secSearch">

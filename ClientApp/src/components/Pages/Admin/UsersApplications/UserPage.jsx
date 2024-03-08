@@ -139,7 +139,6 @@ export default function UserPage() {
     //     }
     // }
     const updateApplication = async () => {
-        // alert('mmmm');
         setSubmiting(true);
         var datatosend = {
             id: applicationId,

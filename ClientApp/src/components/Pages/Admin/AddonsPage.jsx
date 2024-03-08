@@ -54,10 +54,6 @@ const AddonsPage = () => {
         setpageNumber(1)
         getDatar();
     }
-   // useEffect(()=>{
-    //     alert("just modal");
-    // },[modal]);
-
     const toggle = () => setModal(!modal);
     const editCoutry = (record) => {
         setEditdata(record);
@@ -274,7 +270,6 @@ const ModelForm = ({ modal, toggle, data, seteditData, token, restpage}) => {
     }
 
     const handleSubmit = async () => {
-        // alert('mmmm');
         setSubmiting(true);
         // setTimeout(()=>{setSubmiting(false)},3*1000);
         var url="api/AddOn/add-addon";

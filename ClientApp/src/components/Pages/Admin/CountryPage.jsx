@@ -70,10 +70,6 @@ const CountryPage = () => {
             setTabelLoading(false);
         }
     }
-   // useEffect(()=>{
-    //     alert("just modal");
-    // },[modal]);
-
     const toggle = () => setModal(!modal);
     const editCoutry = (id, name, active) => {
         setEditdata(
@@ -238,7 +234,6 @@ const ModelForm = ({ modal, toggle, data, seteditData, token, restpage}) => {
     }
 
     const handleSubmit = async () => {
-        // alert('mmmm');
         setSubmiting(true);
         // setTimeout(()=>{setSubmiting(false)},3*1000);
         var datatosend = {
