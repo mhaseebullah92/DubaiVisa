@@ -100,6 +100,9 @@
                 padding-left: 5px;
                 color: var(--errorColor);
               }
+              &.secondCol{
+                padding-top: 2rem;
+              }
             }
           }
         }
@@ -276,6 +279,28 @@
           .InfoFields {
             .inpRow {
               width: 600px;
+            }
+          }
+        }
+      }
+ 
+    }
+  }
+}
+
+
+@media screen and (min-width:500px) {
+  .cusmodal {
+    .cusmodal-content {
+      .cusmodal-body {
+        .section {
+          .InfoFields {
+            .inpRow {
+            .singleInp{
+              &.secondCol{
+                padding-top: 0rem;
+              }
+            }
             }
 
           }

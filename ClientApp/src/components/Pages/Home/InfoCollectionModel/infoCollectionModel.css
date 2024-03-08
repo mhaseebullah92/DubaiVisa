@@ -93,6 +93,9 @@
   padding-left: 5px;
   color: var(--errorColor);
 }
+.cusmodal .cusmodal-content .cusmodal-body .section .InfoFields .inpRow .singleInp.secondCol {
+  padding-top: 2rem;
+}
 .cusmodal .cusmodal-content .cusmodal-body .section .card-footer-custom {
   padding: 10px;
   display: flex;
@@ -204,5 +207,10 @@
   }
   .cusmodal .cusmodal-content .cusmodal-body .section .InfoFields .inpRow {
     width: 600px;
+  }
+}
+@media screen and (min-width: 500px) {
+  .cusmodal .cusmodal-content .cusmodal-body .section .InfoFields .inpRow .singleInp.secondCol {
+    padding-top: 0rem;
   }
 }/*# sourceMappingURL=infoCollectionModel.css.map */

@@ -358,7 +358,7 @@ const InfoCollectionModel = ({ isOpen, onClose, national = "", selectedPlan, mon
                   <Input type="number" name='number' placeholder="Enter Phone Number" onChange={handleChange} error={infoError.numberMessage ? true : false} />
                   {infoError.numberMessage ? (<span className='errorMessage'>{infoError.numberMessage}</span>) : ""}
                 </div>
-                <div className="singleInp">
+                <div className="singleInp secondCol">
                   <Input type="email" name='email' placeholder="Enter email" onChange={handleChange} error={infoError.emailMessage ? true : false} />
                   {infoError.emailMessage ? (<span className='errorMessage'>{infoError.emailMessage}</span>) : ""}
                 </div>
@@ -368,7 +368,7 @@ const InfoCollectionModel = ({ isOpen, onClose, national = "", selectedPlan, mon
                   <Input type="text" name='firstName' placeholder="Enter First Name" onChange={handleChange} error={infoError.firstNameMessage ? true : false} />
                   {infoError.firstNameMessage ? (<span className='errorMessage'>{infoError.firstNameMessage}</span>) : ""}
                 </div>
-                <div className="singleInp">
+                <div className="singleInp secondCol">
                   <Input type="text" name='lastName' placeholder="Enter Last Name" onChange={handleChange} error={infoError.lastNameMessage ? true : false} />
                   {infoError.lastNameMessage ? (<span className='errorMessage'>{infoError.lastNameMessage}</span>) : ""}
                 </div>
@@ -377,7 +377,7 @@ const InfoCollectionModel = ({ isOpen, onClose, national = "", selectedPlan, mon
                 <div className="singleInp">
                   <Input type="text" name='nationality' placeholder={national} disable={true} />
                 </div>
-                <div className="singleInp">
+                <div className="singleInp secondCol">
                   <Input type="text" name='destination' placeholder="UAE" disable={true} />
                 </div>
               </div>
@@ -386,7 +386,7 @@ const InfoCollectionModel = ({ isOpen, onClose, national = "", selectedPlan, mon
                   <Input type="text" name='passportNumber' placeholder="Enter Passport Number" onChange={handleChange} error={infoError.passportNumberMessage ? true : false} />
                   {infoError.passportNumberMessage ? (<span className='errorMessage'>{infoError.passportNumberMessage}</span>) : ""}
                 </div>
-                <div className="singleInp">
+                <div className="singleInp secondCol">
                   <Input type="text" name='profession' placeholder="Enter Profession" onChange={handleChange} error={infoError.professionMessage ? true : false} />
                   {infoError.professionMessage ? (<span className='errorMessage'>{infoError.professionMessage}</span>) : ""}
                 </div>
@@ -396,7 +396,7 @@ const InfoCollectionModel = ({ isOpen, onClose, national = "", selectedPlan, mon
                   <Input type="date" name='travelDate' placeholder="Enter Visiting Date" onChange={handleChange} error={infoError.travelDateMessage ? true : false} />
                   {infoError.travelDateMessage ? (<span className='errorMessage'>{infoError.travelDateMessage}</span>) : ""}
                 </div>
-                <div className="singleInp">
+                <div className="singleInp secondCol">
                   <Input type="text" name='purpose' placeholder="Enter Purpose of Visit" onChange={handleChange} error={infoError.purposeMessage ? true : false} />
                   {infoError.purposeMessage ? (<span className='errorMessage'>{infoError.purposeMessage}</span>) : ""}
                 </div>
