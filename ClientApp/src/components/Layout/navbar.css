@@ -124,7 +124,8 @@
   }
   .header .navBar .navLists .btn-cus a {
     color: var(--whiteColor);
-    font-weight: 500;
+    font-weight: 400;
+    font-size: 0.9rem;
   }
 }
 @media screen and (min-width: 960px) {

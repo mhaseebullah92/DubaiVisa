@@ -53,6 +53,10 @@ li{
   padding: 4rem 0 2rem;
 }
 
+.section-cus-m-pad{
+  padding: 7rem 0 2rem;
+}
+
 .container-cus{
   padding-left: 4rem;
   padding-right: 4rem;
@@ -100,4 +104,10 @@ input{
 
 body{
   background: var(--bodyColor);
+}
+
+@media screen and (max-width: 768px) {
+  .section-cus-m-pad{
+    padding: 4rem 0 2rem;
+  }
 }

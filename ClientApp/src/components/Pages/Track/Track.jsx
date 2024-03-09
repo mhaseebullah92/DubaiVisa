@@ -61,7 +61,7 @@ const Track = () => {
     }
 
     return (
-        <section className="trackmain container container-cus section-cus">
+        <section className="trackmain container container-cus section-cus-m-pad">
             {/* <CountrySearchBar /> */}
             {/* <InfoCollectionModel isOpen={openModel} onClose={() => { setOpenModel(false) }} /> */}
 

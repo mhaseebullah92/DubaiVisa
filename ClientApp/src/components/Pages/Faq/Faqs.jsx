@@ -93,11 +93,11 @@ const faqQA = [
 
 const Faqs = () => {
   return (
-    <section className="faqs container container-cus section-cus">
+    <section className="faqs container container-cus section-cus-m-pad">
 
       <div className="secTitle">
         <h3 className="title">
-          Track Your Application
+            Everything you need to know about UAE visas
         </h3>
       </div>
       {

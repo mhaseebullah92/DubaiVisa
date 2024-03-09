@@ -45,10 +45,10 @@ const Navbar= () => {
                         </li>
                         <li className="navItem">
                             <Link className="navLink" to="/fetch-data">Fetch data</Link>
-                        </li> */}
+                        </li> */}<a href="https://api.whatsapp.com/send?phone=9290078601" target="_blank" rel="noopener noreferrer" >
                         <button className="btn-cus">
-                            <a href="/">Contact</a>
-                        </button>
+                           <a> Emergency<br/>Service</a>
+                        </button></a>
                     </ul>
 
                     <div onClick={removeNavbar} className="closeNavbar">

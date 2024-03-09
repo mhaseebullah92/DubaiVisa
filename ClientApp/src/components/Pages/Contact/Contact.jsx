@@ -6,7 +6,7 @@ import { FaWhatsapp } from "react-icons/fa";
 
 const Contact = () => {
     return (
-        <section className="contact container container-cus section-cus">
+        <section className="contact container container-cus section-cus-m-pad">
 
             <div className="secTitle">
                 <h3 className="title">
