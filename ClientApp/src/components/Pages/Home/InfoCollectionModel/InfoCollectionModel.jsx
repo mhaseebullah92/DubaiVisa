@@ -247,7 +247,6 @@ const InfoCollectionModel = ({ isOpen, onClose, national = "", selectedPlan, mon
       if(response.ok){
           const data = await response.json();
           setAddon(data);
-          console.log(data);
       }else{
           console.log('error while fetching country list');
       }

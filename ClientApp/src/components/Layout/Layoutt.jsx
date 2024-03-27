@@ -13,9 +13,6 @@ export class Layoutt extends Component {
     return (
       <div>
         <Navbar />
-        {/* <div>
-          {console.log(this.props.children)}
-        </div> */}
         <Outlet />
         <Footer />
       </div>
