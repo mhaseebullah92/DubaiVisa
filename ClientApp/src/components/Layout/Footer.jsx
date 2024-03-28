@@ -2,12 +2,10 @@ import React, { useEffect, useState } from "react";
 import './footer.css'
 import { FiChevronRight } from "react-icons/fi";
 import moment from 'moment-timezone';
-import { MdOutlineTravelExplore } from "react-icons/md";
-import { AiFillInstagram, AiFillYoutube, AiOutlineTwitter } from "react-icons/ai";
+import { AiFillInstagram, AiOutlineWhatsApp, AiFillFacebook } from "react-icons/ai";
+import logoImage from "../../Assets/logodubaitravelt.png";
 import { FaTripadvisor } from "react-icons/fa";
 import footerleftimg from "../../Assets/casepng.png";
-// import footerleftimg from "../../Assets/beachpng.png";
-// import footerleftimg from "../../Assets/mappng.png";
 
 const Footer= () => {
     const [dubaiTime, setDubaiTime] = useState('');
@@ -19,17 +17,6 @@ const Footer= () => {
 
             return () => clearInterval(intervalId);
         }, []);
-        // const scrollToSection = () => {
-        //     const sectionId = 'serchiddd';
-        //     const section = document.getElementById(sectionId);
-        
-        //     if (section) {
-        //       section.scrollIntoView({
-        //         behavior: 'smooth',
-        //         block: 'start',
-        //       });
-        //     }
-        //   };
     return (
         <section className="footer">
             {/* <div className="videoDiv">
@@ -55,17 +42,22 @@ const Footer= () => {
                     <div className="footerIntro flex">
                         <div className="logoDiv">
                             <a href="/" className="logo flex">
-                                <MdOutlineTravelExplore className="icon" />
-                                Travel
+                               <img  src={logoImage} width="50px" alt="website logo" />Online Dubai Visa
                             </a>
                         </div>
                         <div className="footerParagraph">
-                            dsdsdsc dsikmc slmdcls lmsdm eoslmc  lokds dlsk ldmslmdslm lmdlsmsd lmdlmsd lmdlms lmkdlsmds lmdsl dsmlsmd mlmsdlmds
+                            We’ll be with you every step of the way, when you apply with us. You’ll have a dedicated team of experts who will keep you updated with the progress of your application from start to finish, and will always be on the end of the phone or live chat to answer your questions.
                         </div>
                         <div className="footerSocials">
-                            <AiOutlineTwitter className="icon" />
-                            <AiFillYoutube className="icon" />
-                            <AiFillInstagram className="icon" />
+                            <a href="https://wa.link/9y6f5t" rel="noopener noreferrer" target="_blank">
+                                <AiOutlineWhatsApp className="icon" />
+                            </a>
+                            <a href="https://www.facebook.com/DubaiTravelstour1?mibextid=kFxxJD" rel="noopener noreferrer" target="_blank">
+                                <AiFillFacebook  className="icon" />
+                            </a>
+                            <a href="https://www.instagram.com/dubaitravelstour?igsh=MXdkbXNiaGtxdGxhcw%3D%3D&utm_source=qr" rel="noopener noreferrer" target="_blank">
+                                <AiFillInstagram className="icon" />
+                            </a>
                             <FaTripadvisor className="icon" />
                         </div>
                     </div>
@@ -73,83 +65,73 @@ const Footer= () => {
                         {/* one group */}
                         <div className="linkGroup">
                             <span className="groupTitle">
-                                Our Agency
+                                Get in touch
                             </span>
                             <li className="footerList flex">
                                 <FiChevronRight className="icon" />
-                                Service
+                                onlinedubaivisa.ae@gmail.com
+                            </li>
+                            <li className="footerList flex">
+                                <a href="https://wa.link/9y6f5t" rel="noopener noreferrer" target="_blank">
+                                    <FiChevronRight className="icon" />
+                                    Whatsapp
+                                </a>
                             </li>
                             <li className="footerList flex">
                                 <FiChevronRight className="icon" />
-                                Insurance
+                                +971521218403
                             </li>
-                            <li className="footerList flex">
-                                <FiChevronRight className="icon" />
-                                Agency
-                            </li>
-                            <li className="footerList flex">
+                            {/* <li className="footerList flex">
                                 <FiChevronRight className="icon" />
                                 tourism
                             </li>
                             <li className="footerList flex">
                                 <FiChevronRight className="icon" />
                                 payment
-                            </li>
+                            </li> */}
                         </div>
                         {/* two group */}
                         <div className="linkGroup">
                             <span className="groupTitle">
-                                Our Agency
+                                Help & Support
                             </span>
                             <li className="footerList flex">
                                 <FiChevronRight className="icon" />
-                                Service
+                                onlinedubaivisa.ae@gmail.com
                             </li>
                             <li className="footerList flex">
-                                <FiChevronRight className="icon" />
-                                Insurance
-                            </li>
-                            <li className="footerList flex">
-                                <FiChevronRight className="icon" />
-                                Agency
-                            </li>
-                            <li className="footerList flex">
-                                <FiChevronRight className="icon" />
-                                tourism
-                            </li>
-                            <li className="footerList flex">
-                                <FiChevronRight className="icon" />
-                                payment
+                                <a href="/faq" >
+                                    <FiChevronRight className="icon" />
+                                    FAQ
+                                </a>
                             </li>
                         </div>
                         {/* three group */}
                         <div className="linkGroup">
                             <span className="groupTitle">
-                                Our Agency
+                                Hangout with Us
                             </span>
                             <li className="footerList flex">
-                                <FiChevronRight className="icon" />
-                                Service
+                                <a href="https://www.facebook.com/DubaiTravelstour1?mibextid=kFxxJD" rel="noopener noreferrer" target="_blank">
+                                    <FiChevronRight className="icon" />
+                                    Facebook
+                                </a>
                             </li>
                             <li className="footerList flex">
-                                <FiChevronRight className="icon" />
-                                Insurance
+                                <a href="https://www.instagram.com/dubaitravelstour?igsh=MXdkbXNiaGtxdGxhcw%3D%3D&utm_source=qr" rel="noopener noreferrer" target="_blank">
+                                    <FiChevronRight className="icon" />
+                                    Instagram
+                                </a>
                             </li>
                             <li className="footerList flex">
-                                <FiChevronRight className="icon" />
-                                Agency
-                            </li>
-                            <li className="footerList flex">
-                                <FiChevronRight className="icon" />
-                                tourism
-                            </li>
-                            <li className="footerList flex">
-                                <FiChevronRight className="icon" />
-                                payment
+                                <a href="https://wa.link/9y6f5t" rel="noopener noreferrer" target="_blank">
+                                    <FiChevronRight className="icon" />
+                                    Whatsapp
+                                </a>
                             </li>
                         </div>
                         {/* four group */}
-                        <div className="linkGroup">
+                        {/* <div className="linkGroup">
                             <span className="groupTitle">
                                 Our Agency
                             </span>
@@ -173,11 +155,11 @@ const Footer= () => {
                                 <FiChevronRight className="icon" />
                                 payment
                             </li>
-                        </div>
+                        </div> */}
                     </div>
                     <div className="footerDiv flex">
-                        <small>Beast travel website</small>
-                        <small>CopyRIGht - abc 2023</small>
+                        <small>Online Dubai Visa website</small>
+                        <small>CopyRight - Online Dubai Visa 2023</small>
                     </div>
                 </div>
 

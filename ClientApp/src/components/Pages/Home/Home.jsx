@@ -15,7 +15,7 @@ const Home = () => {
                             Our Packages
                         </span>
                         <h1 className="homeTitle">
-                            Search yout Holidays
+                            Search your Holidays
                         </h1>
                     </div>
                     {/* <div className="homeFooterIcons flex">

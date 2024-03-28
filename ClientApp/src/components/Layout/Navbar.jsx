@@ -4,6 +4,7 @@ import {MdOutlineTravelExplore} from 'react-icons/md';
 import {AiFillCloseCircle} from 'react-icons/ai';
 import {TbGridDots} from 'react-icons/tb';
 import { Link } from 'react-router-dom';
+import logoImage from "../../Assets/logodubaitravelt.png";
 
 const Navbar= () => {
     const [active, setActive]= useState('navBar')
@@ -20,7 +21,8 @@ const Navbar= () => {
 
                 <div className="logoDiv">
                     <Link to="/" className="logo flex">
-                        <h1><MdOutlineTravelExplore className="icon" />Travel.</h1>
+                        <img  src={logoImage} width="100px" alt="website logo" ></img>
+                        {/* <h1><MdOutlineTravelExplore className="icon" />Travel.</h1> */}
                     </Link>
                 </div>
 
@@ -45,7 +47,7 @@ const Navbar= () => {
                         </li>
                         <li className="navItem">
                             <Link className="navLink" to="/fetch-data">Fetch data</Link>
-                        </li> */}<a href="https://api.whatsapp.com/send?phone=9290078601" target="_blank" rel="noopener noreferrer" >
+                        </li> */}<a href="https://wa.link/9y6f5t" target="_blank" rel="noopener noreferrer" >
                         <button className="btn-cus">
                            <a> Emergency<br/>Service</a>
                         </button></a>

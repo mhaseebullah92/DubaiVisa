@@ -97,6 +97,11 @@
   color: var(--SecondaryColor);
 }
 
+  .header .navBar .navLists .btn-cus a {
+    color: var(--whiteColor);
+    font-weight: 400;
+    font-size: 0.9rem;
+  }
 @media screen and (min-width: 769px) {
   .toggleNavbar, .closeNavbar {
     display: none;
@@ -109,6 +114,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: row;
+    margin-bottom: 0px;
   }
   .header .navBar .navLists .navItem .navLink {
     color: var(--textColor);
@@ -121,11 +127,6 @@
   }
   .header .navBar .navLists .btn {
     margin-left: 1rem;
-  }
-  .header .navBar .navLists .btn-cus a {
-    color: var(--whiteColor);
-    font-weight: 400;
-    font-size: 0.9rem;
   }
 }
 @media screen and (min-width: 960px) {

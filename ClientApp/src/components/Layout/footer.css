@@ -33,7 +33,7 @@
   flex-direction: column;
   margin: auto;
   row-gap: 2rem;
-  z-index: 100;
+  z-index: 10;
 }
 .footer .secContent .contactDiv {
   justify-content: space-between;
@@ -113,7 +113,7 @@
   flex-basis: 50%;
   width: 100%;
   gap: 1rem;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   justify-content: space-between;
 }
 .footer .secContent .footerCard .footerLinks .linkGroup .groupTitle {
@@ -153,10 +153,10 @@
 }
 
 @media screen and (min-width: 500px) {
-  .footer .secContent .footerCard .footerLinks {
-    grid-template-columns: repeat(4, 1fr);
+  /* .footer .secContent .footerCard .footerLinks {
+    grid-template-columns: repeat(1, 1fr);
     padding-bottom: 1rem;
-  }
+  } */
   .footer .secContent .footerCard .footerDiv {
     justify-content: space-between;
     flex-direction: row;
@@ -167,6 +167,10 @@
   }
 }
 @media screen and (min-width: 660px) {
+  .footer .secContent .footerCard .footerLinks {
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 1rem;
+  }
   .footer .secContent .contactDiv {
     flex-direction: row;
     justify-content: space-between;
@@ -181,7 +185,11 @@
     width: 200px;
   }
 }
-@media screen and (min-width: 840px) {
+@media screen and (min-width: 990px) {
+  /* .footer .secContent .footerCard .footerLinks {
+    grid-template-columns: repeat(3, 1fr);
+    padding-bottom: 1rem;
+  } */
   .footer {
     padding: 1.5rem 0;
   }
